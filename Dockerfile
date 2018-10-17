@@ -11,6 +11,7 @@ RUN apt-get -y install binutils-dev
 RUN apt-get -y install strace
 RUN apt-get -y install ltrace
 RUN apt-get -y install vim-common
-RUN apt-get -y install libcapstone3
-RUN apt-get -y install libcapstone3-dev
+RUN apt-get -y install libbfd-dev
+RUN apt-get -y install binutils-multiarch-dev
+RUN apt-get -y install libcapstone-dev
 CMD ["/bin/bash"]
